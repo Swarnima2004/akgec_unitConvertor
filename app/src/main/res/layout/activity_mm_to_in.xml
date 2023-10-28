@@ -2,21 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/convert"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".km_to_m">
+    tools:context=".mm_to_in">
 
     <EditText
-        android:id="@+id/meter"
+        android:id="@+id/mili"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:hint="VALUE IN METER"
+        android:hint="VALUE IN MILIMETERS"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/kilometer"
+        app:layout_constraintBottom_toTopOf="@+id/inch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,11 +35,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kilometer"
+        app:layout_constraintTop_toBottomOf="@+id/inch"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/METER"
+        android:id="@+id/Mili"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -64,10 +63,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/kmeter" />
+        app:srcCompat="@drawable/mm_in" />
 
     <TextView
-        android:id="@+id/kilometer"
+        android:id="@+id/inch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -78,7 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/meter"
+        app:layout_constraintTop_toBottomOf="@+id/mili"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
@@ -88,9 +87,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="32dp"
         android:gravity="center"
-        android:hint="VALUE IN KILOMETER"
+        android:hint="VALUE IN INCHES"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/METER"
+        app:layout_constraintBottom_toTopOf="@+id/Mili"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,11 +104,14 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="CONVERT"
-        app:layout_constraintBottom_toTopOf="@+id/meter"
+        app:layout_constraintBottom_toTopOf="@+id/mili"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/METER" />
+        app:layout_constraintTop_toBottomOf="@+id/Mili"
+        tools:ignore="UnknownId" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

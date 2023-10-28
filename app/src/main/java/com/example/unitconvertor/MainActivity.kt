@@ -35,13 +35,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-//        val imagekm = findViewById<ImageView>(R.id.kmTOm)
-//        imagekm.setOnClickListener{
-//            val intent = Intent(this,km_to_m::class.java)
-//            startActivity(intent)
-//        }
-
-
 
 
     }
